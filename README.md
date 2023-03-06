@@ -18,3 +18,37 @@ MegaByte (MB) 	1024 KiloBytes
 GigaByte (GB) 	1024 MegaBytes
 
 Output is in 'GB', you can easily modify sysinfo.py to any other unit.
+
+
+
+API
+
+https://developers.virustotal.com/reference/private-files-6
+
+https://virustotal.github.io/vt-py/quickstart.html
+https://developers.virustotal.com/reference/related_threat_actors
+https://developers.virustotal.com/reference/attack-techniques
+
+
+
+https://github.com/tr4cefl0w/virustotal3/blob/master/virustotal3/core.py
+
+https://virustotal.github.io/vt-py/quickstart.html
+https://github.com/VirusTotal/vt-py/tree/master/examples
+
+https://bazaar.abuse.ch/api/#query_hash
+
+
+IPs and urls
+659 - https://github.com/carlospolop/PEASS-ng/blob/master/linPEAS/builder/linpeas_parts/8_interesting_files.sh
+https://github.com/b-fullam/Automating-VirusTotal-APIv3-for-IPs-and-URLs/blob/main/vt-ip-url-analysis.py
+
+
+
+Mitre API
+https://github.com/mitre-attack/mitreattack-python/
+https://github.com/annamcabee/Mitre-Attack-API
+
+
+Build mitre
+https://mitre-attack.github.io/attack-navigator/

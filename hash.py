@@ -9,10 +9,10 @@ class Filehash:
     def sha256hash(self):
         sha256 = hashlib.sha256()
         with open(self.file,'rb') as f:
-            # Read and update hash string value in blocks of 4K to avoid buffer overflow
+            # Read and update hash value in blocks of 4K to avoid buffer overflow
             for byte_block in iter(lambda: f.read(4096),b""):
                     sha256.update(byte_block)
-        return(sha256.hexdigest())
+        return sha256.hexdigest()
     
     
     def sha1hash(self):
