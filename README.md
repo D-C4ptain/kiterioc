@@ -44,6 +44,12 @@ IPs and urls
 https://github.com/b-fullam/Automating-VirusTotal-APIv3-for-IPs-and-URLs/blob/main/vt-ip-url-analysis.py
 
 
+extractor
+https://pypi.org/project/iocextract/
+
+documentation
+https://github.com/cmu-sei/cyobstract
+
 
 Mitre API
 https://github.com/mitre-attack/mitreattack-python/

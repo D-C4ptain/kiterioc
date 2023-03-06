@@ -1,5 +1,6 @@
 # Virtual Environment
 Pipfile
+api_key.py
 
 # Editor Configurations
 .vscode/

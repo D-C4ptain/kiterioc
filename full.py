@@ -9,7 +9,7 @@ apikey = API_KEY
 
 
 #Scan IP
-def Scan_IP(IP):                    
+def Scan_IP(IP):
     print(colored("* Scanning IP...", "white"))
     URL = 'https://www.virustotal.com/api/v3/ip_addresses/'
     headers = {'x-apikey':apikey} 
@@ -129,3 +129,22 @@ def Scan_Hash(Hash):
         else:
             print(colored(f"Try again later\n\nError Code: {value['error']['code']}", "yellow"))
             print()
+
+
+""" Upload file
+            url = "https://www.virustotal.com/api/v3/files"
+            headers = {    
+                "X-Apikey": API_KEY
+            }
+            files = {'file': open(file, 'rb')}
+            response = requests.post(url,files=files, headers=headers)
+            #print(response.json())
+            
+            #get report
+            res = response.json()
+            fileid = res["data"]["id"]
+            print(fileid)
+            
+            url = f"https://www.virustotal.com/api/v3/files/id"
+            response = requests.post(url, files=fileid, headers=headers)
+            #print(response.json())"""
