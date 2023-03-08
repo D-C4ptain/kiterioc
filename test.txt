@@ -1,6 +1,7 @@
 
 ip
 124.23.2.1
+124.23.2.1  124.23.2.1
 This is a text file with ip address: 192.168.1.1 within it, there are more addresses like this one 10.23.12.1
 sprinkled throughout the 1.2.3.4 file.  SomeRight10.3.3.2Next to each other some spaced apart.
 hey there is12 
@@ -17,7 +18,7 @@ I really love example[.]com!
 ... C2: tcp://example[.]com:8989/bad
 
 
-walkup@cs.hawaiii.edu
+walkup@cs.hawaiii.edu dcaptain@rongovarsity.ac.ke,
 dcaptain@rongovarsity.ac.ke, 
 decryptor@wannacry.server sabine@starwar.mandalore
 
@@ -32,7 +33,7 @@ language. You can also visit the Google website at http://www.google.com to sear
  about data science via easy to understand tutorials and examples.
 r2@honda.com
 hyundai.mobi
-
-
+http://ic.rongovarsity.ac.ke
+http://www.google.com http://www.google.com
 
 

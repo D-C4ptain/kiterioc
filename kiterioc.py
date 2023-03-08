@@ -83,7 +83,7 @@ if __name__ == "__main__":
     
     # get command line arguments
     args = ap.ArgumentParser(description="Kiterioc - find IOCs in host system")
-    args.add_argument("-B", "--basic", type=str, metavar="", help="Basic scan")
+    args.add_argument("-B", "-b", "--basic", type=str, metavar="", help="Basic scan")
     args.add_argument("-F", "-V", "--full", "--verbose", type=str, metavar="", help="Verbose scan")
     args.add_argument("-f", "-p", "--folder", "--path", type=str, metavar="", help="scan folder/path, e.g. C:\\SuspiciousFiles\\") #, required=True
     args.add_argument("-e", "--exclude", type=str, metavar="", help="exclude folder, e.g. C:\\mysafefiles\\")
@@ -108,11 +108,11 @@ if __name__ == "__main__":
     
     
     #extract ioc patterns from file
-    extract = Extractor("test.txt")
-    print(extract.ip())
-    print(extract.email())
-    print(extract.domain())
-    print(extract.url())
+    #extract = Extractor("test.txt")
+    #print(extract.ip())
+    #print(extract.domain())
+    #print(extract.url())
+    #print(extract.email())
     
     
     #catch: keyboard, network, 
