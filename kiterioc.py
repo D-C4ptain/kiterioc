@@ -1,5 +1,13 @@
 # ! /usr/bin/python3
 
+# -*- coding: utf-8 -*-
+"""
+kiterioc.py - filesystem threat hunter
+.. Created on 2023-01-23
+.. Licence MIT
+.. codeauthor:: d_captain <dcaptainkenya@gmail.com>, d-captainkenya.github.io
+"""
+
 #Cyber Threat Intelligence - Threat hunting
 #check files on vt, urls, ip, domain(from mails too), emails, suspicious network observables, Map to APTs and give specific remediations according to associated TTPs
 #soc analysts, incident responders, Malware analysts/hunters(Qres)
@@ -89,7 +97,7 @@ if __name__ == "__main__":
     basic.Scan_IP("192.168.3.4")
     basic.Scan_URL("https://www.iuqerfsodp9ifjaposdfjhgosurijfaewrwergwea.com")
     basic.Scan_URL("http://ic.rongovarsity.ac.ke") #flagged
-    basic.Scan_Domain("45.15.156.72") #iuqerfsodp9ifjaposdfjhgosurijfaewrwergwea.com
+    basic.Scan_Domain("scdd.hawaii.edu") #iuqerfsodp9ifjaposdfjhgosurijfaewrwergwea.com
     basic.Scan_Hash("d41d8cd98f00b204e9800998ecf84270") #ed01ebfbc9eb5bbea545af4d01bf5f1071661840480439c6e5babe8e080e41aa
     """
  
@@ -101,10 +109,10 @@ if __name__ == "__main__":
     
     #extract ioc patterns from file
     extract = Extractor("test.txt")
-    #print(extract.ip())
+    print(extract.ip())
+    print(extract.email())
     print(extract.domain())
     print(extract.url())
-    print(extract.email())
     
     
     #catch: keyboard, network, 

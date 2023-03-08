@@ -102,6 +102,9 @@ def Scan_Domain(Domain):
         if value['error']['code'] == "InvalidArgumentError":
             print(colored("Invalid domain name", "red"))
             print()
+        elif value['error']['code'] == "NotFoundError":
+            print(colored(f">>> This domain seems clean('{Domain}').", "green")) #ignore not found(404) domain
+            print()                                                              #assume is clean
         else:
             print(colored(f"Try again later\n\nError Code: {value['error']['code']}", "yellow"))
             print()
@@ -124,7 +127,7 @@ def Scan_Hash(Hash):
             print()
     else:
         if value['error']['code'] == "NotFoundError":
-            print(colored(f">>> This hash is clean('{Hash}').", "green")) #ignore not found(404) files
+            print(colored(f">>> This hash seems clean('{Hash}').", "green")) #ignore not found(404) files
             print()                                                       #assume is clean
         else:
             print(colored(f"Try again later\n\nError Code: {value['error']['code']}", "yellow"))

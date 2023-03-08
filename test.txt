@@ -5,7 +5,7 @@ This is a text file with ip address: 192.168.1.1 within it, there are more addre
 sprinkled throughout the 1.2.3.4 file.  SomeRight10.3.3.2Next to each other some spaced apart.
 hey there is12 
 12345678
-127.0.0.1
+127.0.0.1 ff:5f:ff:f0:ff:ff
 955.2.3.44
 233.33.4567.52 hey 178.34.56.75
 127.0.1.1
@@ -15,3 +15,24 @@ urls
 I really love example[.]com!
 ... All the bots are on hxxp://example.com/bad/url these days.
 ... C2: tcp://example[.]com:8989/bad
+
+
+walkup@cs.hawaiii.edu
+dcaptain@rongovarsity.ac.ke, 
+decryptor@wannacry.server sabine@starwar.mandalore
+
+tcp://example.com:8989/bad
+hxxp://makau.git.hub/hubby
+https://www.iuqerfsodp9ifjaposdfjhgosurijfaewrwergwea.com
+http://ic.rongovarsity.ac.ke
+http://abc.hostname.com/somethings/anything/
+For example, you can visit the Python website at https://www.python.org to learn more about the Python programming
+language. You can also visit the Google website at http://www.google.com to search for information on the
+ internet. Finally, you can visit Data Science Parichay's website at https://datascienceparichay.com to learn 
+ about data science via easy to understand tutorials and examples.
+r2@honda.com
+hyundai.mobi
+
+
+
+
