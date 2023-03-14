@@ -19,6 +19,9 @@ GigaByte (GB) 	1024 MegaBytes
 
 Output is in 'GB', you can easily modify sysinfo.py to any other unit.
 
+nts
+https://www.fortinet.com/resources/cyberglossary/indicators-of-compromise
+
 
 
 API

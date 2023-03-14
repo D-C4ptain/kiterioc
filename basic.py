@@ -1,4 +1,4 @@
-## BASIC SCAN - IP, URL, Domain, Hash
+## BASIC SCAN - simple IP, URL, Domain, Hash
 
 from termcolor import colored
 import requests
