@@ -85,8 +85,8 @@ if __name__ == "__main__":
     
     #full scan and report
     #systeminfo()
-    walker = Full(arguments.folder, arguments.exclude)
-    walker.filewalker()
+    full = Full(arguments.folder, arguments.exclude)
+    full.filewalker()
     
     
 

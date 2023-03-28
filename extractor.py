@@ -15,15 +15,22 @@ class Extractor:
                     iplist.add(ip)
                 except socket.error:
                     pass
-        return iplist
+        if not iplist:
+            return "No IPs found"
+        else:
+            return "IPs: ", list(iplist)
 
 
     def domain(self):
         domainlist = set()
-        #extract domains from extracted emails
-        for i in self.email():    
-            domain = i.split('@')[1]
-            domainlist.add(str(domain))
+        #extract domains from extracted emails (not necessary)
+        # if not self.email() == "No emails found":
+        #     for i in self.email():
+        #         domain = i.split('@')[1]
+        #         domainlist.add(domain)
+        # else:
+        #     print(self.email()) # no mails
+            
         # extract domains from file        
         with open(self.file) as f:
             string = f.readlines()
@@ -32,20 +39,26 @@ class Extractor:
                 if domains:
                     for i in domains:
                         domainlist.add(i.split("www.")[-1])
-        return domainlist
+        if not domainlist:
+            return "No domains found"
+        else:
+            return "Domains: ", list(domainlist)
         
 
     # extract urls from file        
     def url(self):
         urllist = set()
-        with open('test.txt') as f:
+        with open(self.file) as f:
             string = f.readlines()
             for s in string:
                 urls = re.findall('http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*(),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+', s)
                 if urls:
                     for i in urls:
                         urllist.add(i)
-        return urllist
+        if not urllist:
+            return "No urls found"
+        else:
+            return "URLs: ", list(urllist)
 
 
     # extract emails from file     
@@ -58,6 +71,9 @@ class Extractor:
                 if reg:
                     for i in reg:
                         maillist.add(i)
-        return maillist
+        if not maillist:
+            return "No emails found"
+        else:
+            return "Emails: ", list(maillist)
     
            

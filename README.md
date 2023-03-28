@@ -19,6 +19,17 @@ GigaByte (GB) 	1024 MegaBytes
 
 Output is in 'GB', you can easily modify sysinfo.py to any other unit.
 
+
+
+Some regex patterns are overdoing it: better safe than sorry though!
+
+
+
+
+
+
+
+
 nts
 https://www.fortinet.com/resources/cyberglossary/indicators-of-compromise
 
