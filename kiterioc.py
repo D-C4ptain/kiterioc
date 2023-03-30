@@ -65,6 +65,7 @@ if __name__ == "__main__":
     
     banner()
     
+    # catch name resolution error
     """
     #basic
     basic.Scan_IP("192.168.3.4")
@@ -82,11 +83,13 @@ if __name__ == "__main__":
     
     
     
+
     
     #full scan and report
     #systeminfo()
     full = Full(arguments.folder, arguments.exclude)
     full.filewalker()
+    
     
     
 
