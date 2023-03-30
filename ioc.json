@@ -1,0 +1,239 @@
+{
+    "filename": "./kiterioc.py",
+    "hash": {
+        "sha256": "9825bac21ada4ee834955ad097429546039f47ed8359b77ff98b7f66f373fda6",
+        "sha1": "5cbbbec61f3de8d3a5518dd2bf5cca2bc4d08b84",
+        "md5": "3255b9566b307135f648679e25d78b1a"
+    },
+    "ips": [
+        "Possible IPs: ",
+        [
+            "192.168.3.4"
+        ]
+    ],
+    "urls": [
+        "Possible URLs: ",
+        [
+            "https://cocomelonc.github.io/tutorial/2021/09/18/malware-injection-1.html",
+            "https://d-captainkenya.github.io",
+            "http://ic.rongovarsity.ac.ke",
+            "https://www.iuqerfsodp9ifjaposdfjhgosurijfaewrwergwea.com"
+        ]
+    ],
+    "domains": [
+        "Possible Domains: ",
+        [
+            "kiterioc.py",
+            "d-captainkenya.github.io",
+            "test.txt",
+            "cocomelonc.github.io",
+            "extract.domain",
+            "dt.now",
+            "scdd.hawaii.edu",
+            "ic.rongovarsity.ac.ke",
+            "args.parse",
+            "full.filewa",
+            "args.add",
+            "arguments.exclud",
+            "hack.cpp",
+            "Style.RESET",
+            "Fore.BLUE",
+            "ap.Argume",
+            "gmail.com",
+            "hack.exe",
+            "iuqerfsodp9ifjaposdfjhgosurijfaewrwergwea.com",
+            "malware-injection-1.html",
+            "arguments.folder",
+            "extract.ip",
+            "extract.url",
+            "extract.email",
+            "basic.Scan"
+        ]
+    ],
+    "emails": [
+        "Possible Emails: ",
+        [
+            "dcaptainkenya@gmail.com"
+        ]
+    ]
+}{
+    "filename": "./Pipfile",
+    "hash": {
+        "sha256": "06ef54f49dff6638a6ca4130256f4605ebde7c635d768142c63ad11863dced7e",
+        "sha1": "a3caae9e54471754e27b1903839c68a6a2541166",
+        "md5": "e7088a7c37429bd7a1e09dfd05f5052f"
+    },
+    "ips": "No IPs found",
+    "urls": [
+        "Possible URLs: ",
+        [
+            "https://pypi.org/simple"
+        ]
+    ],
+    "domains": [
+        "Possible Domains: ",
+        [
+            "pypi.org"
+        ]
+    ],
+    "emails": "No emails found"
+}{
+    "filename": "./.gitignore",
+    "hash": {
+        "sha256": "e4fa362127ec1c6f4580a1ec9a06be8fd59857080d1c3df851277ea141ba2bbf",
+        "sha1": "2c39e347c1799b73d296d52a0b2a52d2e2155448",
+        "md5": "8f83552a6af8f888a34ac59e3f7f577e"
+    },
+    "ips": "No IPs found",
+    "urls": "No urls found",
+    "domains": [
+        "Possible Domains: ",
+        [
+            "key.py",
+            "sysinfo.json"
+        ]
+    ],
+    "emails": "No emails found"
+}{
+    "filename": "./LICENCE",
+    "hash": {
+        "sha256": "7e74d7dab1d062ad0f263149bc9aaef5552ad1b15437fa790ce004ae0159a7f0",
+        "sha1": "fd63066851d27f9cedbaa8efaf27ceef9cf086ff",
+        "md5": "ca62e1d994d9fe8bf7111f39a9350635"
+    },
+    "ips": "No IPs found",
+    "urls": "No urls found",
+    "domains": "No domains found",
+    "emails": "No emails found"
+}{
+    "filename": "./requirements.txt",
+    "hash": {
+        "sha256": "b02f23bc635a7f223fdad2113fee5cf3f405b2b9f59392e943b3c86bfe97d0fb",
+        "sha1": "03ac46894348834a8998b83ba993a47121905645",
+        "md5": "197779e9caf46d1f8992ad0ddfecd1df"
+    },
+    "ips": "No IPs found",
+    "urls": "No urls found",
+    "domains": "No domains found",
+    "emails": "No emails found"
+}{
+    "filename": "./sysinfo.json",
+    "hash": {
+        "sha256": "dd08cf5e164b24f154cadf3e3c232819447ee0a1bdaaaed53e31a044a9cd0ac4",
+        "sha1": "e6cbdb2cabb2a0c91aa450d8650fee281b966b5c",
+        "md5": "42e2afabbe11e6ec8f56ca95ec683481"
+    },
+    "ips": [
+        "Possible IPs: ",
+        [
+            "255.255.255.0",
+            "172.17.255.255",
+            "192.168.1.255",
+            "255.255.0.0",
+            "140.82.114.26",
+            "140.82.113.25",
+            "172.17.0.1",
+            "0.0.0.0",
+            "76.76.21.98",
+            "192.168.1.1",
+            "127.0.0.1",
+            "192.168.1.104",
+            "76.76.21.164",
+            "185.199.108.133",
+            "2.16.140.35",
+            "54.149.61.21",
+            "255.0.0.0"
+        ]
+    ],
+    "urls": "No urls found",
+    "domains": [
+        "Possible Domains: ",
+        [
+            "3.9.2.final"
+        ]
+    ],
+    "emails": "No emails found"
+}{
+    "filename": "./sysinfo.py",
+    "hash": {
+        "sha256": "a87ab8816bec5494bed3684581a0a45a15b1d6925bfe1f9160ae8c16ee78e3b8",
+        "sha1": "d12d72fe8708db9896454591e218af3416758afd",
+        "md5": "c0dba6f7c29d3faa5dfd6bed549d21e1"
+    },
+    "ips": "No IPs found",
+    "urls": "No urls found",
+    "domains": [
+        "Possible Domains: ",
+        [
+            "platform.versio",
+            "proc.append",
+            "Fore.WHITE",
+            "devices.append",
+            "sys.exit",
+            "psutil.virtua",
+            "python3.exe",
+            "packages.append",
+            "collect-sysinfo.py",
+            "platform.node",
+            "result.releas",
+            "psutil.AF",
+            "re.match",
+            "snic.family",
+            "socket.AF",
+            "Style.RESET",
+            "gpu.strip",
+            "psutil.swap",
+            "dinfo.pop",
+            "requirements.txt",
+            "cpuinfo.get",
+            "sys.platfo",
+            "Fore.BLUE",
+            "pp.pprint",
+            "subprocess.PIPE",
+            "pprint.Pretty",
+            "result.machin",
+            "process.wait",
+            "psutil.users",
+            "platform.machin",
+            "sysinfo.json",
+            "result.node",
+            "f.write",
+            "result.system",
+            "json.dumps",
+            "psutil.proces",
+            "result.proces",
+            "p.as",
+            "df.split",
+            "process.stdout.read",
+            "platform.releas",
+            "re.compil",
+            "subprocess.Popen",
+            "process.stderr.read",
+            "result.versio",
+            "platform.system",
+            "subprocess.check",
+            "powershell.exe",
+            "Fore.RED",
+            "psutil.cpu",
+            "Fore.GREEN",
+            "psutil.disk",
+            "psutil.net",
+            "addresses.append",
+            "snic.addres",
+            "inf.groupd",
+            "platform.uname"
+        ]
+    ],
+    "emails": "No emails found"
+}{
+    "filename": "./api_key.py",
+    "hash": {
+        "sha256": "8dbb9ae5155243748ca12d29ce089ad9d7c42a491239972403920c83d0a8dfdf",
+        "sha1": "4da495e6b9a6bdc6fde2656601b0f2cbc0eff7f2",
+        "md5": "70234f05114aebd6c71bb43ffff35146"
+    },
+    "ips": "No IPs found",
+    "urls": "No urls found",
+    "domains": "No domains found",
+    "emails": "No emails found"
+}
