@@ -5,6 +5,7 @@ import os
 import json
 import requests
 import time
+import sys
 
 from hash import Filehash
 from api_key import API_KEY
@@ -35,7 +36,7 @@ class Full:
             f.seek(0)
             f.truncate()
     
-        print(colored("[+] Scanning file system...", "red"), "\n")    
+        print(colored("[+] Scanning file system...", "red"))    
         for root, dirs, files in os.walk(self.folder):
             if str(self.excludefolder) in os.path.join(root): #exclude a folder
                 pass
@@ -48,19 +49,19 @@ class Full:
                     
                     # calculate file hashes
                     hash = Filehash(file)
-                    print("sha256:", hash.sha256hash())
-                    print("sha1:", hash.sha1hash())
-                    print("MD5:", hash.md5hash())
+                    print(colored("sha256:", "green"), hash.sha256hash())
+                    print(colored("sha1:", "green"), hash.sha1hash())
+                    print(colored("md5:", "green"), hash.md5hash())
                     time.sleep(3)
                     
                     #extract ioc from file
                     extract = Extractor(file)
                     try:
-                        print(extract.ip())
-                        print(extract.url())
-                        print(extract.domain())
-                        print(extract.email())
-                        time.sleep(3)
+                        print(colored("Possible IPs:", "green"), extract.ip())
+                        print(colored("Possible URLs:", "green"), extract.url())
+                        print(colored("Possible DOMAIN names:", "green"), extract.domain())
+                        print(colored("Possible EMAILS:", "green"), extract.email())
+                        time.sleep(4)
     
                         #dump ioc to json
                         data = {
@@ -81,11 +82,20 @@ class Full:
                         
                     #submit file to vt
                     #Scan Hash
-                    print(colored("* Scanning file(SHA-1...", "white"))
+                    print(colored("* Scanning file(SHA-1...", "yellow"))
                     URL = 'https://www.virustotal.com/api/v3/files/'
                     headers = {'x-apikey':apikey}
                     hash = hash.sha1hash()
-                    res = requests.get(URL + hash.strip(), headers=headers) #using sha1 hash
+                    import socket
+                    try:
+                        res = requests.get(URL + hash.strip(), headers=headers) #using sha1 hash
+                    # except ConnectionRefusedError as e:
+                    #     print("No internet access!")
+                    #     sys.exit(1)
+                    except Exception as e:
+                        print(e)
+                        print(colored("Possible internet access issue! ^^^^^ \nExiting...", "red"))
+                        sys.exit(1)
                     status = res.status_code
                     value = res.json()
                     if status == 200:

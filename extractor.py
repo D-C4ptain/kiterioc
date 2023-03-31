@@ -18,7 +18,7 @@ class Extractor:
         if not iplist:
             return "No IPs found"
         else:
-            return "Possible IPs: ", list(iplist)
+            return list(iplist)
 
 
     def domain(self):
@@ -42,7 +42,7 @@ class Extractor:
         if not domainlist:
             return "No domains found"
         else:
-            return "Possible Domains: ", list(domainlist)
+            return list(domainlist)
         
 
     # extract urls from file        
@@ -58,7 +58,7 @@ class Extractor:
         if not urllist:
             return "No urls found"
         else:
-            return "Possible URLs: ", list(urllist)
+            return list(urllist)
 
 
     # extract emails from file     
@@ -74,6 +74,6 @@ class Extractor:
         if not maillist:
             return "No emails found"
         else:
-            return "Possible Emails: ", list(maillist)
+            return list(maillist)
     
            

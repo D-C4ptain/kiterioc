@@ -1,5 +1,6 @@
 # calculate hash of file object
 import hashlib
+import time
 
 class Filehash:
     def __init__(self, file):
@@ -7,6 +8,7 @@ class Filehash:
         
         
     def sha256hash(self):
+        time.sleep(2)
         sha256 = hashlib.sha256()
         try:
             with open(self.file,'rb') as f:
@@ -19,6 +21,7 @@ class Filehash:
     
     
     def sha1hash(self):
+        time.sleep(2)
         sha1 = hashlib.sha1()
         try:
             with open(self.file,'rb') as f:
@@ -32,6 +35,7 @@ class Filehash:
 
 
     def md5hash(self):
+        time.sleep(2)
         SIZE = 32768
         md5 = hashlib.md5()
         try:
