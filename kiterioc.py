@@ -2,10 +2,10 @@
 
 # -*- coding: utf-8 -*-
 """
-kiterioc.py - filesystem threat hunter
+kiterioc.py - filesystem ioc threat hunter
 .. Created on 2023-01-23
 .. Licence MIT
-.. codeauthor:: d_captain <dcaptainkenya@gmail.com>, d-captainkenya.github.io
+.. codeauthor:: d_captain <dcaptainkenya@gmail.com>, dennismasila.github.io
 """
 
 #Cyber Threat Intelligence - Threat hunting
@@ -35,7 +35,7 @@ def banner():
         ##  ##    ##     ##    ##       ##   ##    ##  ##     ## ##       
         ##   ##   ##     ##    ##       ##    ##   ##  ##     ## ##    ## 
         ##    ## ####    ##    ######## ##     ## ####  #######   ###### 
-        From the hills of Kitere - https://d-captainkenya.github.io
+        From the hills of Kitere - https://dennismasila.github.io
         """)
     print(f"\t\t Started: [{dt.now()}]")
     print(Style.RESET_ALL)
