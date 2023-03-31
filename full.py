@@ -57,10 +57,10 @@ class Full:
                     #extract ioc from file
                     extract = Extractor(file)
                     try:
-                        print(colored("Possible IPs:", "green"), extract.ip())
-                        print(colored("Possible URLs:", "green"), extract.url())
-                        print(colored("Possible DOMAIN names:", "green"), extract.domain())
-                        print(colored("Possible EMAILS:", "green"), extract.email())
+                        print(colored("Possible IPs:", "blue"), extract.ip())
+                        print(colored("Possible URLs:", "blue"), extract.url())
+                        print(colored("Possible DOMAIN names:", "blue"), extract.domain())
+                        print(colored("Possible EMAILS:", "blue"), extract.email())
                         time.sleep(4)
     
                         #dump ioc to json
@@ -86,31 +86,25 @@ class Full:
                     URL = 'https://www.virustotal.com/api/v3/files/'
                     headers = {'x-apikey':apikey}
                     hash = hash.sha1hash()
-                    import socket
                     try:
                         res = requests.get(URL + hash.strip(), headers=headers) #using sha1 hash
-                    # except ConnectionRefusedError as e:
-                    #     print("No internet access!")
-                    #     sys.exit(1)
+                        status = res.status_code
+                        value = res.json()
+                        if status == 200:
+                            if value['data']['attributes']['last_analysis_stats']['malicious'] > 0:
+                                print(colored(f">>>This hash is malicious({hash}).", "red"))
+                                with open("mal.json", "a") as f:
+                                    json.dump(value, f, indent = 4, sort_keys=False)
+                            else:
+                                print(colored(f">>> This hash is clean('{hash}').", "green"))
+                        else:
+                            if value['error']['code'] == "NotFoundError":
+                                print(colored(f">>> This hash seems clean('{hash}').", "green")) #ignore not found(404) files                                                      #assume is clean
+                            elif value['error']['code'] == "QuotaExceededError":
+                                print(colored(f">>> Scan Limit reached! Try gain in a moment.", "red")) # Scan limit reached
+                            else:
+                                print(colored(f"Try again later\n\nError Code: {value['error']['code']}", "yellow"))
                     except Exception as e:
                         print(e)
                         print(colored("Possible internet access issue! ^^^^^ \nExiting...", "red"))
-                        sys.exit(1)
-                    status = res.status_code
-                    value = res.json()
-                    if status == 200:
-                        if value['data']['attributes']['last_analysis_stats']['malicious'] > 0:
-                            print(colored(f">>>This hash is malicious({hash}).", "red"))
-                            with open("mal.json", "a") as f:
-                                json.dump(value, f, indent = 4, sort_keys=False)
-                        else:
-                            print(colored(f">>> This hash is clean('{hash}').", "green"))
-                    else:
-                        if value['error']['code'] == "NotFoundError":
-                            print(colored(f">>> This hash seems clean('{hash}').", "green")) #ignore not found(404) files                                                      #assume is clean
-                        elif value['error']['code'] == "QuotaExceededError":
-                            print(colored(f">>> Scan Limit reached! Try gain in a moment.", "red")) # Scan limit reached
-                        else:
-                            print(colored(f"Try again later\n\nError Code: {value['error']['code']}", "yellow"))
                     time.sleep(3)
-        
