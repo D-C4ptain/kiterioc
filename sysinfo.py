@@ -8,24 +8,20 @@ Debian/Ubunt/Mint:
 Windows7/8/10 (with admin privileges):
 > python3.exe collect-sysinfo.py
 """
-try:
-    from colorama import Fore, Back, Style
-    import platform
-    import cpuinfo
-    import psutil
-    import sys
-    import json
-    import socket
-    import subprocess
-    import pprint
-    import re
-except Exception as e:
-    print(Fore.RED + "Install all modules! check requirements.txt")
-    print(Style.RESET_ALL)
-    sys.exit(1)
+
+from colorama import Fore, Back, Style
+import platform
+import cpuinfo
+import psutil
+import sys
+import json
+import socket
+import subprocess
+import pprint
+import re
 
 try: 
-    #OUTPUT_FILE = 'sysinfo.json'
+    OUTPUT_FILE = 'sysinfo.json'
 
     info = dict()
     pp = pprint.PrettyPrinter(indent=4)
@@ -141,8 +137,10 @@ try:
     #pp.pprint(info)
 
 
-    # with open(OUTPUT_FILE, 'w') as f:
-    #     f.write(json.dumps(info))
+    with open(OUTPUT_FILE, 'w') as f:
+        f.write(json.dumps(info))
+
+
 
 
     from colorama import Fore, Style

@@ -82,7 +82,7 @@ class Full:
                         
                     #submit file to vt
                     #Scan Hash
-                    print(colored("* Scanning file(SHA-1...", "yellow"))
+                    print(colored("* Scanning file hash(SHA-1)...", "yellow"))
                     URL = 'https://www.virustotal.com/api/v3/files/'
                     headers = {'x-apikey':apikey}
                     hash = hash.sha1hash()
@@ -107,4 +107,5 @@ class Full:
                     except Exception as e:
                         print(e)
                         print(colored("Possible internet access issue! ^^^^^ \nExiting...", "red"))
+                        sys.exit(1)
                     time.sleep(3)
