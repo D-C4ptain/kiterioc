@@ -1,0 +1,53 @@
+
+#https://bazaar.abuse.ch/api/#filetype
+# https://gist.github.com/n3l5/1a06fe180733a5df82ae392c2db4e52d
+
+https://www.geolocation.com/?ip=45.134.22.228#ipresult
+
+
+
+
+
+
+
+
+https://www.fortinet.com/resources/cyberglossary/indicators-of-compromise
+
+
+API
+
+https://developers.virustotal.com/reference/private-files-6
+
+https://virustotal.github.io/vt-py/quickstart.html
+https://developers.virustotal.com/reference/related_threat_actors
+https://developers.virustotal.com/reference/attack-techniques
+
+
+
+https://github.com/tr4cefl0w/virustotal3/blob/master/virustotal3/core.py
+
+https://virustotal.github.io/vt-py/quickstart.html
+https://github.com/VirusTotal/vt-py/tree/master/examples
+
+https://bazaar.abuse.ch/api/#query_hash
+
+
+IPs and urls
+659 - https://github.com/carlospolop/PEASS-ng/blob/master/linPEAS/builder/linpeas_parts/8_interesting_files.sh
+https://github.com/b-fullam/Automating-VirusTotal-APIv3-for-IPs-and-URLs/blob/main/vt-ip-url-analysis.py
+
+
+extractor
+https://pypi.org/project/iocextract/
+
+documentation
+https://github.com/cmu-sei/cyobstract
+
+
+Mitre API
+https://github.com/mitre-attack/mitreattack-python/
+https://github.com/annamcabee/Mitre-Attack-API
+
+
+Build mitre
+https://mitre-attack.github.io/attack-navigator/
