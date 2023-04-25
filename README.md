@@ -63,11 +63,6 @@ Diamond model
 
 
 
-
-
-
-
-
 Some regex patterns are overdoing it: better safe than sorry though!
 
 Data measurement units can be classified into the following:
@@ -86,3 +81,13 @@ GigaByte (GB) 	1024 MegaBytes
 Output is in 'GB', you can easily modify sysinfo.py to any other unit.
 
 
+USAGE:
+        sudo python3 kiterioc.py -flags
+EXAMPLE
+          sudo python3 kiterioc.py -f .
+
+          sudo python3 kiterioc.py -b -hash e7088a7c37429bd7a1e09dfd05f5052f
+
+          sudo python3 kiterioc.py -b -ip 192.168.23.244
+
+          sudo python3 kiterioc.py -b -url http://abc.hostname.com/somethings/anything/
